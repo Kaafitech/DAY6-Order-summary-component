@@ -57,6 +57,7 @@ main {
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+  background-color: var(--Blue100);
   background-image: url(./images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -76,7 +77,7 @@ main {
 }
 
 .txt {
-  padding: 46px 48px;
+  padding: 46.5px 48px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -124,13 +125,22 @@ button {
   font-weight: 500;
 }
 
+.music a:hover {
+  text-decoration: none;
+}
+
 .order {
   cursor: pointer;
   color: var(--Gray600);
 }
 
+.order:hover {
+  color: var(--Blue950);
+}
+
 @media (max-width: 768px) {
   .main {
+    background-color: var(--Blue100);
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -148,7 +158,7 @@ button {
   }
 
   .txt {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -162,3 +172,4 @@ button {
     margin: 0;
   }
 }
+
